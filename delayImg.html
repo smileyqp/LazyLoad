@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片懒加载</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .imgBox{
+            margin: 1000px auto;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            background: pink;
+        }
+        .imgBox img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgBox">
+        <img src="" alt="懒加载" data-img="https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/3ac79f3df8dcd100bbd10c8e738b4710b8122fcb.jpg"/>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./delayImg.js"></script>
+</body>
+</html>
